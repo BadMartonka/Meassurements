@@ -22,7 +22,9 @@ GPIO.setup(channel, GPIO.IN)
 no_rain = InputDevice(27)
 #rain sensor setup
 
+#air-preassure sensor setup
 bmp = BMP085(0x77)
+#air-preassure sensor setup
 
 conn = psycopg2.connect(host="192.168.0.157",database="postgres", user="postgres", password="admin")
 print("Connected...")
